@@ -66,7 +66,8 @@ nav {
 
 .hero {
     text-align: center; /* Centra el texto horizontalmente */
-    color: #088d5a; /* Color del texto */
+    color: #094713; /* Color del texto */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     background: url("../assets/imag/imageninicio.jpg") no-repeat center center; /* Imagen de fondo */
     background-size: cover; /* Ajusta la imagen de fondo al tamaño del contenedor */
     padding: 100px 20px; /* Espaciado interno */

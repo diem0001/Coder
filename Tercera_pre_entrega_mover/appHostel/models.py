@@ -7,7 +7,7 @@ class Cuarto(models.Model):
     capacidad = models.IntegerField()
 
     def __str__(self):
-        return f"{self.nombre} - {self.numero} - {self.capacidad} personas"
+        return f"Nombre : {self.nombre} - Nro cuarto: {self.numero} - {self.capacidad} personas"
     
 class Cliente(models.Model):
     nombre = models.CharField(max_length=20)
@@ -24,4 +24,4 @@ class Empleado(models.Model):
     puesto = models.CharField(max_length=50)
 
     def __str__(self):
-        return f"{self.nombre} - {self.apellido} - {self.puesto} "
+        return f"{self.nombre} - {self.apellido} - puesto: {self.puesto} "
