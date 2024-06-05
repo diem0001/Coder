@@ -1,0 +1,21 @@
+{% extends 'padre.html' %}
+
+{% block parteQueCambia %}
+
+<div class="izquierdo">
+    
+
+    <h2>Resultado de la búsqueda de del empleado: {{ nombre }}</h2>
+
+    {% if empleados %}
+        <ul>
+        {% for empleado in empleados %}
+            <li>{{ empleado.nombre }} - {{ empleado.apellido }} - {{ empleado.puesto }}</li>
+        {% endfor %}
+        </ul>
+    {% else %}
+        <p>No se encontraron empleados con ese nombre.</p>
+    {% endif %}
+</div>    
+    
+{% endblock parteQueCambia %}

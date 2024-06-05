@@ -1,0 +1,13 @@
+{% extends 'padre.html' %}
+
+{% block parteQueCambia %}
+<div class="izquierdo"></div>
+    <h1>Buscar empleados</h1>
+
+    <form action="{% url 'buscarEmpleados' %}" method="get">
+        <p><input type="text" name="nombre" placeholder="Nombre del empleado"></p>
+        <button type="submit">Buscar</button>
+    </form>
+    
+</div>    
+{% endblock parteQueCambia %}

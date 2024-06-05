@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hostel Djaneiro</title>
+    <link rel="stylesheet" href="{% static "css/styles.css" %}">
+    <link href="{% static "css/mis_estilos.css" %}" rel="stylesheet" />
+</head>
+<body>
+    
+    <header >
+        <div class="logo">Djaneiro</div>
+        
+        
+
+    </header>
+    {% include 'navbar.html' %}
+    <main >
+        <section id="inicio" class="hero">
+            <h1>DJANEIRO</h1>
+            <h1> Hostel</h1>
+            
+            
+            
+        </section>
+       
+        {% block parteQueCambia %}
+    
+
+
+        {% endblock parteQueCambia %}
+
+        
+
+        
+        
+        
+        <section id="contacto" class="contact">
+            <h2>Contacto</h2>
+            <div class="social-links">
+                <a href="" target="_blank"><img src="{% static 'assets/logos/face.png' %}" alt="Facebook"></a>
+                <a href="" target="_blank"><img src="{% static 'assets/logos/tw.png' %}" alt="Twitter"></a>
+                <a href="" target="_blank"><img src="{% static 'assets/logos/insta.png' %}" alt="Instagram"></a>
+                <a href="" target="_blank"><img src="{% static 'assets/logos/yt.png' %}" alt="YouTube"></a>
+                <a href="" target="_blank"><img src="{% static 'assets/logos/in.png' %}" alt="linkedin"></a>
+                
+                
+            </div>
+            <p>Email: contacto@djaneiro.com</p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>Diem Entertainment</p>
+            <p>Djaneiro Hostel - 2024</p>
+        </div>
+    </footer>
+
+    <script src="menu.js"></script>
+</body>
+</html>

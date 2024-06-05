@@ -1,0 +1,13 @@
+{% extends 'padre.html' %}
+
+{% block parteQueCambia %}
+<div class="izquierdo"></div>
+    <h1>Crea tu cuarto</h1>
+  
+        <form action="{% url 'cuartoFormulario' %}" method="post">
+            {% csrf_token %}
+            {{ miFormulario.as_p }}
+            <button type="submit">Crear</button>
+        </form>
+</div>
+{% endblock parteQueCambia %}

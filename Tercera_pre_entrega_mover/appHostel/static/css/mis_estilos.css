@@ -1,0 +1,27 @@
+.home_boton{
+    padding-right: 200px;
+    margin-left: 100px; 
+    font-size: 18px;
+}
+
+.nav_boton{
+    justify-content: center;
+    padding-right: 50px;
+    margin: -10px; 
+    font-size: 12px;
+}
+
+.nav_boton_registrar{
+    padding-left: 200px;
+    margin-left: -100px; 
+    color: blue;
+    font-size: 18px;
+}
+
+.izquierdo {
+    font-size: 13px;
+    text-align: left; /* Centra el texto horizontalmente */
+    margin: 3 auto; /* Centra el contenedor horizontalmente */
+    max-width: 600px; /* Opcional: establece un ancho máximo para el contenido */
+}
+
