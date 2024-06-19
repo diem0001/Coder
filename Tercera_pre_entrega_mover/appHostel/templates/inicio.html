@@ -1,9 +1,14 @@
 {% extends 'padre.html' %}
 
-
 {% block parteQueCambia %}
-    <div class="izquierdo">
-        <h1>inicio</h1>
-        <p>{{ mensaje }}</p>
-    </div>
+
+    <h1>BIENVENIDO A DJANEIRO HOSTEL! </h1>
+
+   
+    {% if avatar_url %}
+        <p>Hola, {{ user.username }} </p>
+        
+    {% else %}
+        
+    {% endif %}
 {% endblock parteQueCambia %}

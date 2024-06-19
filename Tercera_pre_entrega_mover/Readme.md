@@ -18,6 +18,7 @@ ingresar al admin poniendo la direccion /admin
 credenciales para ingresar:
 username:david
 password:david1234
+(es el unico superuser)
 
 la otra opcion es ingresar a la pagina web con la direccion /appHostel
 

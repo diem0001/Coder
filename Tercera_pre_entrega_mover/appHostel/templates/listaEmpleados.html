@@ -9,9 +9,19 @@
         <li>
         {{empleado}}
         </li>
+        <div style="display: flex; column-gap: 5px;">
+        <form action="{% url 'eliminarEmpleado' empleado.id  %}" method="post"> {% csrf_token %}
+            <button type="submit">Eliminar</button>
+        </form>
+        <button>
+            <a href="{% url 'EditaEmpleado' empleado.id %}">Actualizar</a>
+        </button>
+        </div>
      {% endfor %}
                
-
+    
     </ul>
+
+    <a href="{% url 'empleadoFormulario' %}">Agregar empleado</a>
     
 {% endblock parteQueCambia %}

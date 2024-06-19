@@ -3,13 +3,39 @@
         <div class="home_boton">
             
         </div>
-        <a class="home_boton" href="{% url "inicio" %}">INICIO</a>
-        <a class="nav_boton" href="{% url "cuartoFormulario" %}">CREAR CUARTOS</a>
-        <a class="nav_boton" href="{% url "buscarPuesto" %}">BUSCAR EMPLEADOS</a>
-        <a class="nav_boton" href="{% url "empleadoFormulario" %}">CREAR EMPLEADOS</a>
-        <a class="nav_boton" href="{% url "listaEmpleados" %}">LISTA DE EMPLEADOS</a>
-        <a class="nav_boton" href="{% url "clienteFormulario" %}">CREAR CLIENTES</a>
-        <a class="nav_boton_registrar" href="{% url "inicio" %}">REGISTRATE!</a>
+        <a class="home_boton" href="{% url 'inicio' %}">INICIO</a>
+        <a class="nav_boton" href="{% url 'cuartoFormulario' %}">CREAR CUARTOS</a>
+        <a class="nav_boton" href="{% url 'buscarPuesto' %}">BUSCAR EMPLEADOS</a>
+        <a class="nav_boton" href="{% url 'empleadoFormulario' %}">CREAR EMPLEADOS</a>
+        <a class="nav_boton" href="{% url 'listaEmpleados' %}">LISTA DE EMPLEADOS</a>
+        <a class="nav_boton" href="{% url 'clienteFormulario' %}">CREAR CLIENTES</a>
+        <a class="nav_boton" href="{% url 'about' %}">SOBRE NOSOTROS</a>
+        
+        
+        {% if user.is_authenticated %}
+            
+                <p>Bienvenido {{user.username}}</p>
+                <form action="{% url 'logout' %}" method="post"> {% csrf_token %}
+                    <button type="submit">SALIR</button>
+                    <a  href="{% url 'editarPerfil' %}">EDITAR PERFIL</a>
+                    
+                    
+                </form>
+            
+            
+            
+            
+        
+        {% else %}
+        <div class="auth-buttons">
+            <a class="nav_boton_registrar" href="{% url 'Login' %}">ENTRAR</a>
+        </div>
+        <div class="auth-buttons">
+            <a class="nav_boton_registrar" href="{% url 'registrar' %}">CREAR CUENTA</a>
+        </div>
+        {% endif %}
+    
+        
         
         
     </div>

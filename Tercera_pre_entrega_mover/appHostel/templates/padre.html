@@ -5,13 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hostel Djaneiro</title>
-    <link rel="stylesheet" href="{% static "css/styles.css" %}">
-    <link href="{% static "css/mis_estilos.css" %}" rel="stylesheet" />
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <link href="{% static 'css/mis_estilos.css' %}" rel="stylesheet" />
 </head>
 <body>
     
     <header >
         <div class="logo">Djaneiro</div>
+        
+        {% if user.is_authenticated %}
+            <div>
+                {% if user.avatar %}
+                    <img src="{{ user.avatar.imagen.url }}" alt="Avatar" style="width: 50px; height: 50px;">
+                {% else %}
+                    <img src="{% static 'default-avatar.png' %}" alt="Avatar" style="width: 50px; height: 50px;">
+                {% endif %}
+                <span>{{ user.username }}</span>
+            </div>
+        {% endif %}
         
         
 

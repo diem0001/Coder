@@ -7,3 +7,5 @@ admin.site.register(Cuarto)
 admin.site.register(Cliente)
 
 admin.site.register(Empleado)
+
+admin.site.register(Avatar)

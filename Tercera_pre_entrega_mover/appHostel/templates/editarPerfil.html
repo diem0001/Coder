@@ -1,0 +1,18 @@
+{% extends 'padre.html' %}
+
+{% block parteQueCambia %}
+<div class="izquierdo"></div>
+    
+  
+        <form action="{% url 'editarPerfil'  %}" method="post">
+            {% csrf_token %}
+            {{ miFormulario.as_p }}
+            <button type="submit">Actualizar</button>
+        </form>
+        
+        <div>
+        <a href="{% url 'agregarAvatar' %}">Editar foto de perfil</a>
+        </div>
+</div>
+{% endblock parteQueCambia %}
+    

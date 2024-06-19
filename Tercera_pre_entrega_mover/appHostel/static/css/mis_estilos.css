@@ -25,3 +25,80 @@
     max-width: 600px; /* Opcional: establece un ancho máximo para el contenido */
 }
 
+/* Contenedor para los botones de autenticación */
+.auth-buttons {
+    display: flex;
+    flex-direction: row;  /* Cambia la dirección de la columna a la fila */
+    align-items: center;  /* Alinea los elementos verticalmente al centro */
+    margin-left: auto;    /* Mueve los elementos a la derecha */
+}
+
+/* Estilos para los botones de autenticación */
+.nav_boton_registrar {
+    margin-left: 10px;  /* Espacio entre los botones */
+    font-size: 14px;    /* Tamaño de la letra */
+    color: blue;        /* Color del texto */
+    text-decoration: none;  /* Eliminar subrayado */
+}
+
+.nav_boton_registrar:hover {
+    text-decoration: underline;  /* Subrayar al pasar el ratón */
+}
+
+/* Contenedor principal para la barra de navegación */
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Estilos para los enlaces del menú de navegación */
+.nav_boton, .home_boton {
+    margin: 0 10px; /* Espaciado entre enlaces */
+    font-size: 16px; /* Tamaño de la letra */
+    color: #000; /* Color del texto */
+    text-decoration: none; /* Eliminar subrayado */
+}
+
+.nav_boton:hover, .home_boton:hover {
+    text-decoration: underline; /* Subrayar al pasar el ratón */
+}
+
+/* Ajustes adicionales para la apariencia general */
+.navbar {
+    padding: 10px 0; /* Espaciado vertical en la barra de navegación */
+}
+
+p {
+    margin: 0; /* Eliminar margen en el párrafo de bienvenida */
+    font-size: 16px; /* Tamaño de la letra */
+}
+
+button {
+    font-size: 14px; /* Tamaño de la letra del botón */
+}
+
+
+.about-me {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+#read-more-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#read-more-btn:hover {
+    background-color: #0056b3;
+}
