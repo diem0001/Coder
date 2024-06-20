@@ -58,7 +58,7 @@ Inicio: Página de bienvenida.
 Crear Cuartos: Permite crear nuevas habitaciones.
 Buscar Empleados: Permite buscar empleados existentes.
 Crear Empleados: Permite añadir nuevos empleados.
-Lista de Empleados: Muestra una lista de empleados registrados. si estas logueado con un superuser podes editar los empleados. el superuser ya creado tiene estas credenciales: usuario: David (D mayuscula) contraseña: david1234
+Lista de Empleados: Muestra una lista de empleados registrados si estas logueado con un superuser podes editar los empleados. el superuser ya creado tiene estas credenciales: usuario: David (D mayuscula) contraseña: david1234. 
 Crear Clientes: Permite añadir nuevos clientes.
 Sobre Nosotros: Información sobre el hostel.
 Entrar: Página de inicio de sesión para usuarios.

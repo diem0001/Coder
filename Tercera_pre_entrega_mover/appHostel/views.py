@@ -239,7 +239,7 @@ def about(req):
 
 
 #----------------------------------------------------------------------------------------------
-@login_required
+
 def editar_perfil(req):
 
     usuario = req.user
